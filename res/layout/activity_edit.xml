@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffffff">
+   
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#60000000"
+	    android:layout_alignParentBottom="true"
+	    android:id="@+id/ll_allop"
+	    android:orientation="horizontal">
+	    <TextView android:layout_width="64dp"
+	        android:layout_height="48dp"
+	        android:textSize="16sp"
+	        android:textStyle="bold"
+	        android:gravity="center"
+	        android:text="变换"
+	        android:id="@+id/tv_select_operation"
+	        android:background="@drawable/dropdown_selector"
+	        />
+	    <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" 
+	        android:scrollbars="horizontal"
+	        android:fadeScrollbars="true"
+	        android:fadingEdgeLength="0dp"
+	        android:fadingEdge="none"
+	        android:id="@+id/ll_operation">
+	        <ImageButton android:layout_width="48dp"
+		        android:layout_height="48dp"
+		        android:scaleType="fitCenter"
+		        android:onClick="onClick"
+		        android:id="@+id/ib_crop"
+		        android:src="@drawable/crop_selector" />
+		    <ImageButton android:layout_width="48dp"
+		        android:layout_height="48dp"
+		        android:scaleType="fitCenter"
+		        android:onClick="onClick"
+		        android:id="@+id/ib_rotate"
+		        android:src="@drawable/rotate_selector" />
+		    
+		    <ImageButton android:layout_width="48dp"
+		        android:layout_height="48dp"
+		        android:scaleType="fitCenter"
+		        android:onClick="onClick"
+		        android:id="@+id/ib_lashen"
+		        android:src="@drawable/ic_menu_lashen" />
+		    
+		    <ImageButton android:layout_width="48dp"
+		        android:layout_height="48dp"
+		        android:scaleType="fitCenter"
+		        android:onClick="onClick"
+		        android:id="@+id/ib_zoom"
+		        android:src="@drawable/zoom_selector" />
+		    <ImageButton android:layout_width="48dp"
+		        android:layout_height="48dp"
+		        android:scaleType="fitCenter"
+		        android:onClick="onClick"
+		        android:id="@+id/ib_narrow"
+		        android:src="@drawable/ic_menu_narrow" />
+	    </LinearLayout>
+	    
+	</LinearLayout>
+	<FrameLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+	    android:layout_above="@id/ll_allop"
+        android:id="@+id/fl_view" >
+        
+    </FrameLayout>
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#99000000"
+        android:visibility="gone"
+        android:id="@+id/rl_confirm"  >
+        <ImageView android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="#00000000"
+            android:src="@drawable/ic_cfm_cancel"
+            android:layout_alignParentLeft="true"
+            android:onClick="onClick"
+            android:id="@+id/iv_cfm_cancel" />
+        <ImageView android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="#00000000"
+            android:src="@drawable/ic_cfm_ok"
+            android:layout_alignParentRight="true"
+            android:onClick="onClick"
+            android:id="@+id/iv_cfm_ok" />
+        
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_cfm_ok"
+            android:layout_toLeftOf="@id/iv_cfm_cancel"
+            android:id="@+id/ll_cfm_title"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+	<ProgressBar android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    style="@android:style/Widget.ProgressBar.Inverse"
+	    android:id="@+id/pb_edit_loading"
+	    android:layout_centerInParent="true"
+	    android:visibility="gone" />
+	
+</RelativeLayout>

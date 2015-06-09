@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- actionbar -->
+    <item android:id="@+id/menu_share"
+        android:title="分享"
+        android:showAsAction="always"
+        android:icon="@drawable/share_selector"
+        android:actionProviderClass="com.zhao.paipai.provider.ShareActionProvider" />
+    
+    <item android:id="@+id/menu_edit"
+        android:title="编辑"
+        android:showAsAction="always"
+        android:icon="@drawable/edit_selector"
+        android:actionProviderClass="com.zhao.paipai.provider.EditActionProvider" />
+    
+    <item android:id="@+id/menu_delete"
+        android:title="删除"
+        android:showAsAction="always"
+        android:icon="@drawable/delete_selector"
+        android:actionProviderClass="com.zhao.paipai.provider.DeleteActionProvider" />
+    
+    <!-- hide menu -->
+	<item android:id="@+id/menu_share_hide"
+	    android:title="[分享]"
+	    android:icon="@drawable/share_selector"
+	    android:actionProviderClass="com.zhao.paipai.provider.ShareActionProvider"
+	    android:showAsAction="never" ></item>
+	
+	<item android:id="@+id/menu_edit_hide"
+	    android:title="[编辑]"
+	    android:icon="@drawable/edit_selector"
+	    android:actionProviderClass="com.zhao.paipai.provider.EditActionProvider"
+	    android:showAsAction="never" ></item>
+	
+	<item android:id="@+id/menu_delete_hide"
+	    android:title="[删除]"
+	    android:icon="@drawable/delete_selector"
+	    android:actionProviderClass="com.zhao.paipai.provider.DeleteActionProvider"
+	    android:showAsAction="never" ></item>
+	
+</menu>

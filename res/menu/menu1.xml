@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu_photos"
+        android:title="相册"
+        android:showAsAction="always"
+        android:icon="@drawable/photo_selector"
+        android:actionProviderClass="com.zhao.paipai.provider.PhotoActionProvider" />
+    
+	<item android:id="@+id/menu_photos_hide"
+	    android:title="[相册]"
+	    android:icon="@drawable/photo_selector"
+        android:actionProviderClass="com.zhao.paipai.provider.PhotoActionProvider"
+	    android:showAsAction="never" ></item>
+</menu>

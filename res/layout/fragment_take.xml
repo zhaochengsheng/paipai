@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_main"
+    >
+  
+    
+    <FrameLayout android:layout_width="match_parent"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_height="match_parent"
+        android:background="#aa667788"
+        android:layout_centerInParent="true"
+        android:id="@+id/fl_camera_view" >
+        
+    </FrameLayout>
+    
+
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_bottom"
+        android:background="#60000000"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+        
+		<ImageButton android:layout_width="50dp"
+		    android:layout_height="48dp"
+		    android:scaleType="fitCenter"
+		    android:contentDescription="video"
+		    android:layout_alignParentLeft="true"
+		    android:layout_gravity="center|center_horizontal"
+		    android:id="@+id/ib_record_video"
+		    android:tag="1"
+		    android:clickable="false"
+		    android:src="@drawable/video_selector" /> 
+        
+		<ImageButton android:layout_width="64dp"
+		    android:layout_height="48dp"
+		    android:scaleType="fitCenter"
+		    android:contentDescription="takephoto"
+		    android:layout_centerInParent="true"
+		    android:tag="1"
+		    android:layout_gravity="center|center_horizontal"
+		    android:id="@+id/ib_takePic"
+		    android:clickable="false"
+		    android:src="@drawable/camera_selector" /> 
+ 
+        <ImageButton android:layout_width="50dp"
+		    android:layout_height="48dp"
+		    android:scaleType="fitCenter"
+		    android:contentDescription="switch"
+		    android:layout_alignParentRight="true"
+		    android:layout_gravity="center|center_horizontal"
+		    android:id="@+id/ib_switch"
+		    android:clickable="false"
+		    android:src="@drawable/revert_selector" /> 
+        
+    </RelativeLayout>
+ 
+</RelativeLayout>

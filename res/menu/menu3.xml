@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu_save"
+        android:title="保存"
+        android:showAsAction="always"
+        android:icon="@drawable/save_selector"
+        android:actionProviderClass="com.zhao.paipai.provider.SaveActionProvider" />
+    
+    <item android:id="@+id/menu_cancel"
+        android:title="还原"
+        android:showAsAction="always"
+        android:icon="@drawable/revert_selector"
+        android:actionProviderClass="com.zhao.paipai.provider.CancelActionProvider" />
+    
+    <item android:id="@+id/menu_close"
+        android:title="关闭"
+        android:showAsAction="always"
+        android:icon="@drawable/close_selector"
+        android:actionProviderClass="com.zhao.paipai.provider.CloseActionProvider" />
+    
+    
+    
+	<item android:id="@+id/menu_save_hide"
+	    android:title="[保存]"
+	    android:icon="@drawable/save_selector"
+        android:actionProviderClass="com.zhao.paipai.provider.SaveActionProvider"
+	    android:showAsAction="never" ></item>
+	
+	<item android:id="@+id/menu_cancel_hide"
+	    android:title="[还原]"
+	    android:icon="@drawable/revert_selector"
+        android:actionProviderClass="com.zhao.paipai.provider.CancelActionProvider"
+	    android:showAsAction="never" ></item>
+	
+	<item android:id="@+id/menu_close_hide"
+	    android:title="[关闭]"
+	    android:icon="@drawable/close_selector"
+        android:actionProviderClass="com.zhao.paipai.provider.CloseActionProvider"
+	    android:showAsAction="never" ></item>
+	
+	
+</menu>

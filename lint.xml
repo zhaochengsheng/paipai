@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ClickableViewAccessibility">
+        <ignore path="src/com/zhao/paipai/PicsFragment.java" />
+    </issue>
+    <issue id="DrawAllocation">
+        <ignore path="src/com/zhao/paipai/bianhuan/Crop.java" />
+    </issue>
+    <issue id="InflateParams">
+        <ignore path="src/com/zhao/paipai/EditActivity.java" />
+        <ignore path="src/com/zhao/paipai/PicsFragment.java" />
+        <ignore path="src/com/zhao/paipai/TakeFragment.java" />
+    </issue>
+    <issue id="NewApi">
+        <ignore path="src/com/zhao/paipai/camera/CameraPreview.java" />
+    </issue>
+</lint>

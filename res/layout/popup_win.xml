@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9f000000"
+    android:orientation="vertical" >
+    <TextView android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/tv_bianhuan"
+        android:text="变换" />
+    <TextView android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:background="@android:drawable/divider_horizontal_dark"
+        />
+    <TextView android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/tv_fengge"
+        android:text="风格" />
+    <TextView android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:background="@android:drawable/divider_horizontal_dark"
+        />
+    <TextView android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/tv_xiaoguo"
+        android:text="效果" />
+  
+</LinearLayout>
